@@ -6,12 +6,14 @@
     line-height: 1.5;
     font-weight: 400;
     background-color: #242424;
-    color: rgba(255, 255, 255, 0.87);
+    color: rgba(49, 56, 94, 0.87);
     padding: 10px 20px;
 }
 
 .navbarName {
     margin-right: auto;
+    color: rgba(255, 255, 255, 0.87);
+    text-decoration: none;
 }
 
 .hamburgerMenu {
@@ -42,15 +44,17 @@
 
 .hamburgerIcon:before {
     transform-origin: top left;
+    transform: translateY(-6px);
 }
 
 .hamburgerIcon:after {
     transform-origin: bottom left;
+    transform: translateY(6px);
 }
 
 .navbarLinks {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
 }
 
 .navbarLink {

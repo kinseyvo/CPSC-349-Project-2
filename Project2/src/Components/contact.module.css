@@ -1,0 +1,160 @@
+.background {
+    background-color: #7091E6;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.contentWrapper {
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    position: relative;
+    z-index: 1;
+}
+
+.contentWrapper.loaded {
+    opacity: 1;
+}
+
+.pageContainer {
+    background-color: #7091E6;
+    min-height: 100vh;
+    opacity: 0;
+    animation: fadeInUp 0.5s ease forwards;
+}
+
+.contactFormContainer {
+    background-color: #ADBBDA;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 450px;
+}
+
+.contactContent {
+    padding: 20px;
+    color: rgb(255, 255, 255);
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    text-align: center;
+    opacity: 0;
+    animation: fadeInUp 0.5s ease forwards;
+}
+
+.contactForm {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.formGroup {
+    margin-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.input {
+    width: calc(50% - 10px);
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.input:last-child {
+    margin-right: 0;
+}
+
+textarea {
+    resize: none;
+}
+
+.submitButton {
+    background-color: #fff;
+    color: #7091E6;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 40px;
+    cursor: pointer;
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+}
+
+@media screen and (max-width: 768px) {
+    .contactFormContainer {
+        max-width: 90%;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+
+    .formGroup {
+        flex-direction: column;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    textarea {
+        width: calc(100% - 20px);
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .contactContent {
+        padding: 10px;
+    }
+}
+
+.socialMedia {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.socialIcons {
+    font-size: 32px;
+}
+
+.socialIcons a {
+    margin: 0 10px;
+}
+
+.socialIcons a[href*="linkedin.com"] svg {
+    color: #0077B5;
+}
+
+.socialIcons a[href*="github.com"] svg {
+    color: #FFFFFF;
+}
+
+.socialIcons a[href*="instagram.com"] svg {
+    color: #C13584;
+}
+
+.socialIcons a[href*="youtube.com"] svg {
+    color: #FF0000;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

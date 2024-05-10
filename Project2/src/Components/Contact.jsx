@@ -12,9 +12,7 @@ export default function Contact() {
 
     return (
         <div className={style.pageContainer}>
-            {/* Background color remains static */}
             <div className={style.background} />
-            {/* Content wrapper */}
             <div className={`${style.contentWrapper} ${isLoaded && style.loaded}`}>
                 <div className={style.contactContent}>
                     <h1>🚀Contact Me!🚀</h1>
@@ -45,8 +43,6 @@ export default function Contact() {
                             <a href="https://www.youtube.com/c/OverlordKinsey" target="_blank" rel="noopener noreferrer"><FaYoutube /></a>
                         </div>
                     </div>
-                    <p>TODO</p>
-                    <p>make background fixed during animations</p>
                 </div>
             </div>
         </div>

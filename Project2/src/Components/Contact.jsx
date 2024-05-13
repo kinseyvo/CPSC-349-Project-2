@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { FaUser, FaEnvelope, FaLinkedin, FaInstagram, FaYoutube } from "react-icons/fa";
-import { FaMessage, FaGithub } from "react-icons/fa6";
+import { FaMessage, FaGithub, FaPaperPlane } from "react-icons/fa6";
 import style from "../styles/contact.module.css";
 
 export default function Contact() {
@@ -41,6 +41,7 @@ export default function Contact() {
                             <a href="https://github.com/kinseyvo" target="_blank" rel="noopener noreferrer"><FaGithub /></a>
                             <a href="https://www.instagram.com/kinsey.vo/?hl=en" target="_blank" rel="noopener noreferrer"><FaInstagram /></a>
                             <a href="https://www.youtube.com/c/OverlordKinsey" target="_blank" rel="noopener noreferrer"><FaYoutube /></a>
+                            <a href="mailto: kinseyvo@outlook.com" target="_blank" rel="noopener noreferrer"><FaPaperPlane /></a>
                         </div>
                     </div>
                 </div>

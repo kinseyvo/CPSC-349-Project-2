@@ -1,0 +1,39 @@
+.projectCard {
+    flex: 0 0 calc(30% - 20px);
+    margin: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    text-align: center;
+}
+
+.projectCard img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.projectCard h3 {
+    margin-top: 10px;
+    font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+}
+
+.projectCard p {
+    margin-top: 5px;
+    font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+}
+
+.projectCard a {
+    display: inline-block;
+    margin-top: 10px;
+    text-decoration: none;
+    color: black;
+}
+
+.githubIcon {
+    font-size: 24px;
+}
+
+.githubLink[href*="github.com"]:hover .githubIcon {
+    color: #FFFFFF;
+}

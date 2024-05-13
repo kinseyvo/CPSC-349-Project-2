@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import style from "./header.module.css";
+import style from "../styles/header.module.css";
 
 export default function Header() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -24,7 +24,7 @@ export default function Header() {
 
     return (
         <div className={style.navbar}>
-            <Link to="/" className={style.navbarName}>Kinsey Vo</Link>
+            <Link to="/" className={style.navbarName}>KV</Link>
             <div className={style.menuContainer}>
                 <button className={style.hamburgerMenu} onClick={toggleMenu}>
                     <span className={style.hamburgerIcon}></span>

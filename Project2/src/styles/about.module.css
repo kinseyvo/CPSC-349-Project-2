@@ -1,0 +1,135 @@
+.fadeIn {
+    animation: fadeInAnimation 1s ease-in-out;
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.aboutPage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+
+.bioSection {
+    display: flex;
+    align-items: center;
+    width: 70%;
+    margin: 0 auto;
+    flex-direction: row;
+    gap: 40px;
+}
+
+.imageContainer {
+    width: 50%;
+    cursor: pointer;
+}
+
+.imageContainer img {
+    width: 100%;
+    height: auto;
+    border-radius: 5%;
+}
+
+.bioText {
+    flex-grow: 1;
+    padding-left: 20px;
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+}
+
+.centerText {
+    text-align: center;
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+}
+
+.bioList {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+}
+
+.bioList li {
+    margin-bottom: 10px;
+}
+
+.socialMediaSection {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.socialMediaLinks {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.socialMediaLinks a {
+    margin-right: 10px;
+    color: #333;
+    font-size: 24px;
+}
+
+.socialMediaLinks a:hover {
+    opacity: 0.8;
+}
+
+.socialMediaLinks a.github:hover {
+    color: black;
+}
+
+.socialMediaLinks a.linkedin:hover {
+    color: #007bff;
+}
+
+.socialMediaLinks a.instagram:hover {
+    color: #c32aa3;
+}
+
+.socialMediaLinks a.youtube:hover {
+    color: #ff0000;
+}
+
+@media screen and (max-width: 768px) {
+    .bioSection {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .imageContainer {
+        width: 50%;
+    }
+
+    .bioText {
+        width: 100%;
+        padding-left: 0;
+        text-align: center;
+    }
+
+    .socialMediaLinks {
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .imageContainer {
+        width: 50%;
+        margin-top: 50px;
+    }
+
+    .bioText {
+        width: 100%;
+        padding-bottom: 0;
+        text-align: center;
+    }
+}

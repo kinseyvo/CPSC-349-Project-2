@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { FaUser, FaEnvelope, FaLinkedin, FaInstagram, FaYoutube } from "react-icons/fa";
 import { FaMessage, FaGithub } from "react-icons/fa6";
-import style from "./contact.module.css";
+import style from "../styles/contact.module.css";
 
 export default function Contact() {
     const [isLoaded, setIsLoaded] = useState(false);

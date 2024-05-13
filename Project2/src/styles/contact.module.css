@@ -134,6 +134,10 @@ textarea {
     margin: 0 10px;
 }
 
+.socialIcons a:hover {
+    opacity: 0.8;
+}
+
 .socialIcons a[href*="linkedin.com"] svg {
     color: #0077B5;
 }

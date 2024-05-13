@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* fraction, first column = half and second column = half */
+    gap: 50px;
+    width: 100%;
+    max-width: 900px;
+    align-items: center;
+}
+
+.left {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+    margin-top: 70px;
+    margin-left: 70px;
+}
+
+.left h2 {
+    margin-bottom: 0px;
+}
+
+.left h1 {
+    margin-bottom: 15px;
+    font-size: 2.5em;
+}
+
+.left p {
+    margin-bottom: 5px;
+}
+
+.left button {
+    margin-top: 25px;
+}
+
+.right {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+    margin-top: 150px;
+}
+
+.button {
+    width: 195px;
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #0056b3;
+}
+
+.techStack {
+    margin-top: 10px;
+}
+
+.techStack h2 {
+    margin-bottom: 10px;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.slideIn {
+    animation: slideInAnimation 1s ease-in-out;
+    opacity: 0;
+    transform: translateX(-100%);
+}
+
+@keyframes slideInAnimation {
+    from {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.slideInRight {
+    animation: slideInRightAnimation 1s ease-in-out;
+    opacity: 0;
+    transform: translateX(100%);
+}
+
+@keyframes slideInRightAnimation {
+    from {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        padding: 0 20px;
+    }
+
+    .content {
+        grid-template-columns: 1fr;
+    }
+
+    .left,
+    .right {
+        margin: 0;
+    }
+
+    .left h1 {
+        font-size: 2em;
+    }
+
+    .button {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .right {
+        margin-top: 10px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .left h1 {
+        font-size: 1.8em;
+    }
+}

@@ -19,7 +19,7 @@ export default function Home() {
                 <div className={`${style.left} ${isLoading ? style.slideIn : ""}`}>
                     <div className={style.left}>
                         <h2>Hi there, I'm</h2>
-                        <h1>Kinsey Vo! 👋</h1>
+                        <p className={style.name}>Kinsey Vo! 👋</p>
                         <p>💻 Software Engineer 💻</p>
                         <a href={resume} target="_blank" rel="noopener noreferrer">
                             <button className={style.button}>View My Resume</button>

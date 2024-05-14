@@ -55,12 +55,15 @@
 .navbarLinks {
     display: flex;
     flex-direction: column;
+    max-height: calc(100vh - 60px);
+    overflow-y: auto;
 }
 
 .navbarLink {
     color: rgba(255, 255, 255, 0.87);
     text-decoration: none;
     margin-left: 20px;
+    margin-bottom: 10px;
 }
 
 .showMenu {

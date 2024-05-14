@@ -3,6 +3,7 @@ import ProjectCard from "./ProjectCard";
 import Modal from "./Modal";
 import style from "../styles/projects.module.css";
 
+// Array of Objects
 const projects = [
     {
         id: 1,

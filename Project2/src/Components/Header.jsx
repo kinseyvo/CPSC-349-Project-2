@@ -29,6 +29,7 @@ export default function Header() {
                 <button className={style.hamburgerMenu} onClick={toggleMenu}>
                     <span className={style.hamburgerIcon}></span>
                 </button>
+                
                 {isMenuOpen && (
                     <div>
                         <Link to="/home" className={style.navbarLink}>Home</Link>
@@ -46,6 +47,16 @@ export default function Header() {
                         <Link to="/contact" className={style.navbarLink}>Contact Me</Link>
                     </div>
                 )}
+
+                {/* NavBar Dropdown Code
+                {(isMenuOpen || !isMobile) && ( // checks if menu is open or if it's not mobile
+                    <div className={isMenuOpen ? `${style.navbarLinks} ${style.showMenu}` : style.navbarLinks}>
+                        <Link to="/home" className={style.navbarLink}>Home</Link>
+                        <Link to="/projects" className={style.navbarLink}>Projects</Link>
+                        <Link to="/about" className={style.navbarLink}>About</Link>
+                        <Link to="/contact" className={style.navbarLink}>Contact Me</Link>
+                    </div>
+                )} */}
             </div>
         </div>
     );

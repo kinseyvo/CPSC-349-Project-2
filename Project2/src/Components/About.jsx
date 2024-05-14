@@ -18,6 +18,7 @@ export default function About() {
         };
     }, []);
 
+    // If image is clicked, social medias will show/hide under the list
     const handleImageClick = () => {
         setShowSocialMedia(!showSocialMedia);
     };

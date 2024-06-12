@@ -27,7 +27,7 @@ export default function Home() {
                     </div>
                 </div>
                 <div className={`${style.right} ${isLoading ? style.slideInRight : ""}`}>
-                    <p>I'm a software engineer, and I specialize in building and developing web and mobile applications. Currently, I'm finishing my Bachelor's in Computer Science and am looking forward to starting my Master's in Software Engineering at California State University, Fullerton.</p>
+                    <p>I'm a software engineer, and I specialize in building and developing web and mobile applications. Recently, I finished my Bachelor's in Computer Science and will be starting my Master's in Software Engineering at California State University, Fullerton.</p>
                     <div className={style.techStack}>
                         <h2>Tech Stack:</h2>
                         <p><span className={style.bold}>🌐 Languages:</span> C, C++, C#, HTML/CSS, Java, JavaScript, Python, R, SQL, x86 Assembly</p>

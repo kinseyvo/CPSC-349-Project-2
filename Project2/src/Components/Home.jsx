@@ -32,7 +32,7 @@ export default function Home() {
                         <h2>Tech Stack:</h2>
                         <p><span className={style.bold}>🌐 Languages:</span> C, C++, C#, HTML/CSS, Java, JavaScript, Python, R, SQL, x86 Assembly</p>
                         <p><span className={style.bold}>📚 Libraries:</span> React</p>
-                        <p><span className={style.bold}>🧱 Frameworks:</span> React Native, Bootstrap, Tailwind CSS</p>
+                        <p><span className={style.bold}>🧱 Frameworks:</span> React Native, Bootstrap, Tailwind CSS, ExpressJS</p>
                         <p><span className={style.bold}>🧰 Tools:</span> VS Code, Visual Studio IDE, Git, GitHub, Node.js, Vite, Android Studio, MySQL Workbench, Unity, Jupyter, Anaconda, Postman, Figma</p>
                     </div>
                 </div>
